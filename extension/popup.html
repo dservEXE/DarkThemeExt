@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Night Sites</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="settings.js" defer></script>
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <img src="icons/moon-48.png" width="44" height="44" alt="">
+        <div><p class="eyebrow">МЕНЬШЕ СВЕТА. БОЛЬШЕ КОМФОРТА.</p><h1>Night Sites</h1></div>
+      </header>
+      <section class="theme-card" aria-labelledby="theme-title">
+        <div class="card-heading"><h2 id="theme-title">Тёмная тема</h2><span id="badge" class="badge">…</span></div>
+        <p id="status" role="status" aria-live="polite">Загружаем настройки…</p>
+        <button id="global-toggle" class="toggle" type="button" role="switch" aria-checked="false" disabled>
+          <span>На всех сайтах</span><span class="switch" aria-hidden="true"><span></span></span>
+        </button>
+      </section>
+      <section class="site-section" aria-labelledby="host">
+        <p class="eyebrow">ТЕКУЩИЙ САЙТ</p>
+        <h2 id="host">Определяем адрес…</h2>
+        <button id="site-toggle" class="toggle secondary" type="button" role="switch" aria-checked="false" disabled>
+          <span id="site-text">Использовать тёмную тему</span><span class="switch" aria-hidden="true"><span></span></span>
+        </button>
+        <p id="site-hint" class="hint">Можно оставить отдельный сайт в исходных цветах.</p>
+      </section>
+      <section class="brightness-section">
+        <div class="brightness-label"><label for="brightness">Яркость темы</label><output id="brightness-value" for="brightness">100%</output></div>
+        <input id="brightness" type="range" min="70" max="110" step="5" value="100" disabled>
+        <div class="range-labels"><span>Темнее</span><button id="reset" type="button" disabled>Сбросить</button><span>Светлее</span></div>
+      </section>
+      <p id="error" class="error" role="alert" hidden></p>
+      <footer>Перекраска · Dark Reader <span>Настройки сохраняются</span></footer>
+    </main>
+  </body>
+</html>

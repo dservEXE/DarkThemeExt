@@ -1,0 +1,7 @@
+{
+  "package": "darkreader",
+  "version": "4.9.134",
+  "integrity": "sha512-HAyEz97vK/UFLO6kcjxojji5OKr0+pwgGLrBzyg67xD2p6ySrSyCBvNxb+0KTSMYk9qNz9Hq85JR3TaKyqEV1w==",
+  "source": "https://github.com/darkreader/darkreader",
+  "license": "MIT"
+}
